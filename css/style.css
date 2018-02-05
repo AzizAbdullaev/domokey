@@ -1,38 +1,7 @@
 body {
 	margin: 0;
-	font-family: OpenSans;
+	font-family: "Open Sans ExtraBold";
   }
-  nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-container {
-	max-width: 940px;
-	margin: 0 auto;
-	display: flex;
-	text-transform: uppercase;
-	font-family: OpenSans;
-}
-
-header p {
-	color: #ffba00;
-	font-size: 15px;
-	font-family: OpenSans;
-	max-width: 940px;
-	margin: 0 auto;
-}
-.header-logo {
-	font-size: 15px;
-	padding: 32px 0;
-}
-
-.header-nav {
-	margin-left: auto;
-	position: relative;
-	text-align: center;
-	font-size: 13px;
-}
 
 @media screen and (max-width: 900px) {
   nav {
@@ -43,119 +12,166 @@ header p {
 }  
 
 @font-face {
-	font-family: OpenSans;
+	font-family: "Open Sans ExtraBold";
     src: url(../fonts/OpenSans-ExtraBold.ttf);
+
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+	text-transform: uppercase;
+	margin: 0 0;
+}
+
+header p {
+	color: #ffba00;
+	font-size: 20px;
+	font-family: "Open Sans ExtraBold";
+	margin-top: 0px;
+	padding-bottom: 135px;
+}
+
+.header-logo {
+	font-size: 15px;
+}
+
+.header-nav {
+	margin-left: auto;
+	position: relative;
+	text-align: center;
+	font-size: 15px;
 }
 
 .logo {
-		background-color: rgb(255, 255, 255);
-		font-family: OpenSans;
+	
 }
+
 .navLinks {
   color: black;
   padding-left: 33px;
   text-decoration: none;
+  color: white;
 }
 
 .navLinks:hover {
-  color: #ffba00;
+  	color: #ffba00;
 }
 
-.section {
-	width: 1920px;
-	height: 600px;
+.nav-container {
+	margin: 0 auto;
+	display: flex;
+	text-transform: uppercase;
+	font-family: "Open Sans ExtraBold";
+	padding: 32px 0 0;
+}
+
+section {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.main {
 	position: relative;
-	z-index: 999;
 	font-size: 47px;
-	color: ;
 	background-image: url(../img/house1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 0 26px rgba(0,0,0,0.75);
 }
-.section:after {
+
+.module-windows {
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.module-windows > h1 {
+	font-size: 65px;
+	padding-bottom: 30px;
+	letter-spacing: 0.1em;
+}
+.btn-module {
+    border: 2px solid #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 21px 0px;
+    color: white;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    width: 262px;
+    display: inline-block;
+}
+.btn-module:hover {
+	color: black;
+	border-radius: 3px;
+	background-color: #ffba00;
+	border: 2px solid #ffba00
+}
+.buttons {
+	padding-bottom: 83px;
+	width: 830px;
+	display: inline-block;
+	justify-content: space-between;
+	flex: 1 1 0;
+}
+
+//* start Section TECHNOLIGIES *//
+
+.technologies {
+	color: black;
+	text-align: center;
+}
+
+.tech-h1 {
+	text-align: center;
+    position: relative;
+	margin-top: 85px;
+	font-size: 36px;
+}
+
+
+.tech-h1:after {
 	content: "";
+	background: #ffba00;
 	position: absolute;
-	bottom: -99px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 960px solid transparent;
-	border-right: 960px solid transparent;
-	border-top: 99px solid rgba(0, 0, 0, 0); 
-	background-image: url(../img/house1.jpg);
+    left: 0;
+    right: 0;
+    top: 37px;
+    margin: 20px auto;
+    width: 160px;
+    height: 5px;
 }
-.section2 {
-	width: 1920px;
-	height: 600px;
-	background: blue;
-	position: relative;
-	z-index: 990;
+
+.tech-about {
+	width: 630px;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 48px;
+	text-align: center;
+	font-family: OpenSans;
+	word-spacing: 5px;
 }
-.section2:after {
-	content: "";
-	position: absolute;
-	bottom: -99px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 960px solid transparent;
-	border-right: 960px solid transparent;
-	border-top: 99px solid blue;
-}
+
+//* end Section TECHNOLIGIES *//
 .section3 {
-	width: 1920px;
-	height: 600px;
 	background: gray;
 	position: relative;
-	z-index: 800;
-}
-.section3:after {
-	content: "";
-	position: absolute;
-	bottom: -99px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 960px solid transparent;
-	border-right: 960px solid transparent;
-	border-top: 99px solid gray;
 }
 .section4 {
-	width: 1920px;
-	height: 600px;
 	background: green;
 	position: relative;
-	z-index: 700;
-}
-.section4:after {
-	content: "";
-	position: absolute;
-	bottom: -99px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 960px solid transparent;
-	border-right: 960px solid transparent;
-	border-top: 99px solid green;
 }
 .section5 {
-	width: 1920px;
-	height: 600px;
 	background: blueviolet;
 	position: relative;
-	z-index: 600;
-}
-.section5:after {
-	content: "";
-	position: absolute;
-	bottom: -99px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 960px solid transparent;
-	border-right: 960px solid transparent;
-	border-top: 99px solid blueviolet;
 }
 .section8 {
-	width: 1920px;
-	height: 600px;
 	background: brown;
 }
