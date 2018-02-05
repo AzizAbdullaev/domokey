@@ -42,6 +42,7 @@ header p {
 	font-size: 20px;
 	margin-top: 0px;
 	padding-bottom: 135px;
+	margin-top: 14px;
 }
 
 section {
@@ -85,8 +86,8 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0 0 26px rgba(0,0,0,0.75);
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
-  	clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);  
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+  	clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
 }
 .module-windows {
 	color: white;
@@ -127,11 +128,11 @@ section {
 
 .technologies {
   	height: 1005px;
-  	clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);  
+  	clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
   	background: white;
   	position: relative;
   	z-index: 900;
-  	padding-top: 85px;
+  	padding-top: 76px;
 }
 .technologies ul{
 	padding-left: 25px;
@@ -153,7 +154,7 @@ section {
     left: 0;
     right: 0;
     top: 37px;
-    margin: 20px auto;
+    margin: 30px auto;
     width: 160px;
     height: 5px;
 }
@@ -371,10 +372,10 @@ label, a{ /*при наведении на стрелки или переклю�
     background-repeat: no-repeat;
     position: relative;
     height: 725px;
-    clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
-    margin-top: -6.8vw;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+    margin-top: -100px;
     z-index: 800; 
-    padding-top: 198px;
+    padding-top: 170px;
 }
 .advantage h1 {
 	color: white;
@@ -412,12 +413,12 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                Projects Done                */
 .projects-done {
 	background-color: #f3f0f4;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
-  	clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);  
-  	height: 655px;
-  	margin-top: -5.7vw;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+  	clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
+  	height: 645px;
+  	margin-top: -100px;
     z-index: 700; 
-    padding-top: 165px;
+    padding-top: 158px;
     position: relative;
 }
 .projects-done section{
@@ -480,11 +481,11 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                Section Photos              */
 
 .photos {
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);
-  	clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%);  
-  	height: 855px;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+  	clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
+  	height: 860px;
   	background: white;
-  	margin-top: -5.2vw;
+  	margin-top: -100px;
     z-index: 600; 
     position: relative;
     padding-top: 160px;
@@ -659,14 +660,15 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                Section Comment                   */
 .comment{
  	background-color: #f3f0f4;
- 	height: 734px;
- 	margin-top: -5.3vw;
+ 	height: 630px;
+ 	margin-top: -100px;
     z-index: 500; 
+    padding-top: 166px;
 }
 .comm-form {
 	background-color: white;
 	width: 270px;
-	height: 415px;	
+	height: 420px;	
 	box-shadow: 0 0 10px rgba(0,0,0,0.40);
 	padding: 0px 30px 0px 30px;
 	margin: 0 15px;
@@ -676,6 +678,7 @@ label, a{ /*при наведении на стрелки или переклю�
 .comm-form h4{
 	text-align: center;
 	text-transform: uppercase;
+	margin-top: 16px;
 }
 .comm-form a{
 	text-decoration: none;
