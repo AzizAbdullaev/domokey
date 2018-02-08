@@ -52,12 +52,45 @@
             <br>Во-вторых, это <b>скорость</b> строительства, достигаемая за счёт предварительной сборки частей дома у нас на производстве. 
             <br>В-третьих, это <b>гибкость</b>, возможность выбрать ту технологию строительства деревянных домов, которую вы хотите.</p>
         </div>
-      <div>
-        <h2>sip-панели</h2>
-        <h2>каркас</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
-        <div>
+      <div class="tabs">
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1">SIP-ПАНЕЛЬ</label>
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2">КАРКАС</label>
+           <div class="tab-content">  
+            <div id="content1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div id="content2">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <input type="radio" name="slides" id="slide1" checked>
+          <input type="radio" name="slides" id="slide2">
+          <input type="radio" name="slides" id="slide3">
           <div>
+            <a href="#3"><img src="img/left.png"></a>
+            <img id="1" src="https://placeimg.com/600/480/people" />
+            <a href="#2"><img src="img/right.png"></a>
+          </div>
+          <div>
+            <a href="#1"><img src="img/left.png"></a>
+            <img id="2" src="https://placeimg.com/600/480/any" />
+            <a href="#3"><img src="img/right.png"></a>
+          </div>
+          <div>
+            <a href="#2"><img src="img/left.png"></a>
+            <img id="3" src="https://placeimg.com/600/480/nature" />
+            <a href="#1"><img src="img/right.png"></a>
+          </div>
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+        <div class="lists">
+          <div class="first-list">
             <ul>
                 <li>Преимущество технологии 1</li>
                 <li>Второе преимущество</li>
@@ -67,7 +100,7 @@
                 <li>И даже тут вроде</li>
             </ul>
           </div> 
-          <div>
+          <div class="second-list">
               <ul>
                 <li>Преимущество технологии 1</li>
                 <li>Второе преимущество</li>
@@ -78,11 +111,8 @@
               </ul>
           </div>   
         </div>
-        <slider>photo slider</slider>
         <p></p>
-        <button>посмотриеть вживую</button>
-      </div>
-    </section>  
+        <a href="#"><div class="btn-tech">посмотриеть вживую</div></a>
   </div>
 
 

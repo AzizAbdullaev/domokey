@@ -1,6 +1,14 @@
+@font-face {
+	font-family: "OpenSansExtraBold";
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
 body {
 	margin: 0;
-	font-family: "Open Sans ExtraBold";
+	font-family: OpenSansExtraBold;
   }
 
 @media screen and (max-width: 900px) {
@@ -10,14 +18,6 @@ body {
     grid-gap: 1em;
  }
 }  
-
-@font-face {
-	font-family: "Open Sans ExtraBold";
-    src: url(../fonts/OpenSans-ExtraBold.ttf);
-
-    font-family: "OpenSans";
-    src: url(../fonts/OpenSans-Regular.ttf);
-}
 
 nav {
   display: flex;
@@ -32,7 +32,7 @@ h1 {
 header p {
 	color: #ffba00;
 	font-size: 20px;
-	font-family: "Open Sans ExtraBold";
+	font-family: OpenSansExtraBold;
 	margin-top: 0px;
 	padding-bottom: 135px;
 }
@@ -67,7 +67,7 @@ header p {
 	margin: 0 auto;
 	display: flex;
 	text-transform: uppercase;
-	font-family: "Open Sans ExtraBold";
+	font-family: OpenSansExtraBold;
 	padding: 32px 0 0;
 }
 
@@ -112,7 +112,7 @@ section {
 	color: black;
 	border-radius: 3px;
 	background-color: #ffba00;
-	border: 2px solid #ffba00
+	border: 2px solid #ffba00;
 }
 .buttons {
 	padding-bottom: 83px;
@@ -157,6 +157,101 @@ section {
 	text-align: center;
 	font-family: OpenSans;
 	word-spacing: 5px;
+}
+
+.tabs {
+  margin: 0 auto;
+  max-width: 740px;
+  margin-left: 0;
+}
+.tab-content {
+  background: #fff;
+  color: #000;
+}
+.tab-content p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+.tab-content > div {
+  display: none;
+  padding: 40px 0;
+}
+input {
+  display: none;
+}
+label {
+  color: #b3b3b3;
+  color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 3px solid #dedbde;
+}
+label:hover {
+  cursor: pointer;
+}
+input:checked + label {
+  background: #fff;
+  color: black;
+  border-bottom: 3px solid black;
+}
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2,
+#tab3:checked ~ .tab-content #content3,
+#tab4:checked ~ .tab-content #content4 {
+  display: block;
+}
+.btn-tech{
+	border: 2px solid #ffba00;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 21px 0px;
+    color: black;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    width: 262px;
+    display: inline-block;
+    background-color: #ffba00;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*SLIDER*/
+
+.slider a, a:visited, a:active {
+  text-decoration: none;
+  color: black;
+}
+.slider {
+	width: 100%;
+	text-align: center;
+	height: 480px;
+	overflow: hidden;
+}
+.slider a {
+  font-family: "Airglyphs";
+  font-size: 64px;
+  vertical-align: top;
+  line-height: 480px;
+}
+
+.slider a:first-child {
+  padding-right: 200px;
+}
+.slider a:last-child {
+  padding-left: 200px;
+}
+
+.slider[role="slider"] {
+  padding: 1% 20px;
+  zoom: 0.1;
+}
+
+/*SLIDER END*/
+
+.lists {
+	display: flex;
 }
 
 //* end Section TECHNOLIGIES *//
