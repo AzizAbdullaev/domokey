@@ -133,14 +133,14 @@ section {
 .technologies {
 }
 
-.tech-h1 {
+.underlining-h1 {
 	text-align: center;
     position: relative;
 	margin-top: 85px;
 	font-size: 36px;
 }
 
-.tech-h1:after {
+.underlining-h1:after {
 	content: "";
 	background: #ffba00;
 	position: absolute;
@@ -363,25 +363,11 @@ label, a{ /*при наведении на стрелки или переклю�
     position: initial;
 }
 .advantage h1 {
-	text-align: center;
-    position: relative;
-	margin-top: 85px;
-	font-size: 36px;
 	color: white;
 }
 
-.advantage h1:after {
-	content: "";
-	background: #ffba00;
-	position: absolute;
-    left: 0;
-    right: 0;
-    top: 37px;
-    margin: 20px auto;
-    width: 160px;
-    height: 5px;
-}
 .items {
+	text-align: center;
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
   	grid-template-rows: 25% 25% 25% 25%;
@@ -391,15 +377,67 @@ label, a{ /*при наведении на стрелки или переклю�
 	font-family: OpenSansExtraBold;
 	color: #ffba00;
 }
-.items h1:after {
-	display: none;
+.icons {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border: 1px dashed #ffba00;
+	border-radius: 50%;
+	padding: 18px;
 }
-/*////////////////// ADVANTAGE END*/
+/*                ADVANTAGE END                 */
 
-.section4 {
-	background: green;
-	position: relative;
+/*                Projects Done                */
+
+.projects-done {
 }
+.houses {
+	display: grid;
+	grid-template-columns: 50% 50%;
+  	grid-template-rows: 50% 50%;
+}
+.houses h3 {
+	text-transform: uppercase;
+	text-align: center;
+}
+.kard {
+	width: 600px;
+	height: 280px;
+	display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.40);
+    border-radius: 5px;
+}
+.first-half {
+	margin: 22px 30px;
+}
+.second-half {
+	margin-bottom: 11px;
+	margin-right: 19px; 
+}
+.second-half a{
+	text-decoration: none;
+}
+.btn-proj {
+	border: 2px solid #ffba00;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 21px 0px;
+    color: black;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    width: 217px;
+    display: inline-block;
+    background-color: #ffba00;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 35px;
+    margin-top: 42px;
+}
+.floor {
+	padding-top: 15px;
+}
+/*                Projects Done                */
+
 .section5 {
 	background: blueviolet;
 	position: relative;
