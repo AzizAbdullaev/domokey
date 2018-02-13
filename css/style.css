@@ -179,7 +179,7 @@ section {
   display: none;
   padding: 40px 0;
 }
-input {
+.technologies input {
   display: none;
 }
 .tabs label {
@@ -436,12 +436,42 @@ label, a{ /*при наведении на стрелки или переклю�
 .floor {
 	padding-top: 15px;
 }
-/*                Projects Done                */
+/*                Projects Done - END                */
 
-.section5 {
-	background: blueviolet;
-	position: relative;
+
+/*                Section Photos              */
+.photos {
 }
+/*                Section Photos - END              */
+
+/*                Section Comment              */
+.comment{
+ 	background-color: #f3f0f4;
+}
+.comm-form {
+	background-color: white;
+	width: 270px;
+	height: 415px;	
+	box-shadow: 0 0 10px rgba(0,0,0,0.40);
+	padding: 15px 30px 25px 30px;
+}
+.comments {
+	display: flex;
+	margin-top: 79px;
+}
+/*                Section Photos - END              */
+
+/*                Section Singup              */
+.singup {
+	background-color: #582c60;
+	height: 139px;
+	display: flex;
+}
+.register {
+	color: white;
+}
+/*                Section Singup - END              */
+
+
 .section8 {
-	background: brown;
 }
