@@ -371,6 +371,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
   	grid-template-rows: 25% 25% 25% 25%;
+  	margin-top: 60px;
 }
 .items h1 {
 	font-size: 16px;
@@ -406,6 +407,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	display: flex;
     box-shadow: 0 0 10px rgba(0,0,0,0.40);
     border-radius: 5px;
+    margin-top: 95px; 
 }
 .first-half {
 	margin: 22px 30px;
@@ -453,7 +455,11 @@ label, a{ /*при наведении на стрелки или переклю�
 	width: 270px;
 	height: 415px;	
 	box-shadow: 0 0 10px rgba(0,0,0,0.40);
-	padding: 15px 30px 25px 30px;
+	padding: 0px 30px 0px 30px;
+	margin: 0 15px;
+	margin-bottom: 45px;
+	text-align: center;
+	border-radius: 4px;
 }
 .comments {
 	display: flex;
@@ -465,10 +471,88 @@ label, a{ /*при наведении на стрелки или переклю�
 .singup {
 	background-color: #582c60;
 	height: 139px;
+}
+.wrapper {
 	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
 }
 .register {
+	margin-top: 38px;
+	margin-left: 70px;
 	color: white;
+    letter-spacing: 0.1em;
+    text-align: center;
+	text-transform: uppercase;
+}
+.register h3 {
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 11px;
+    letter-spacing: 0.1em;
+}
+.register p{
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+.name {
+}
+.name input {
+	height: 36px;
+	width: 292px;
+	border-radius: 4px;
+	border: 0px;
+	margin: 14px 0; 
+	padding-left: 29px;
+}
+.enroll {
+	margin-top: 14px;
+	margin-right: 70px;
+}
+.enroll p{
+	color: #ffba00;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 21px;
+}
+.btn-enroll {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    width: 290px;
+    height: 56px;
+    display: inline-block;
+    background-color: #ffba00;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 56px;
+}
+/*                Section Singup - END              */
+
+
+/*                Section Map                       */
+.map iframe{
+	position: absolute;
+	z-index: 1;
+}
+.contacts {
+	width: 367px;
+	height: 400px;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.40);
+	text-align: center;
+	border-radius: 4px;
+	position: relative;
+	margin-left: 630px;
+	z-index: 999;
+}
+.contacts h2{
+	text-transform: uppercase;
+	color: #582c60;
+	margin-top: 25px;
 }
 /*                Section Singup - END              */
 
