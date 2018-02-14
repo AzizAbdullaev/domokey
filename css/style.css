@@ -220,16 +220,16 @@ section {
     text-transform: uppercase;
 }
 
-/*SLIDER*/
+/******************  SLIDER ********************************/
 
 #slider { /*положение слайдера*/
     position: relative;
-	text-align: left;
+	text-align: center;
     top: 10px;
 }
 
 #slider{ /*центровка слайдера*/
-
+	max-width: 373px;
 	margin: 0 auto;
 }
 
@@ -248,14 +248,9 @@ section {
 	overflow: hidden;
 }
 
-article img{ /*размер изображений слайдера*/
-	width: 375px;
-	height: 360px;
+article img{ 
 }
 
-#desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 430px; /*максимальнная длинна*/
-}
 
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
@@ -264,7 +259,7 @@ article img{ /*размер изображений слайдера*/
 #switch3:checked ~ #controls label:nth-child(2){
 	background: url('../img/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
 	float: left;
-	margin: 0 0 0 -84px; /*сдвиг влево*/
+	margin: 0 0 0 9px; /*сдвиг влево*/
 	display: block;
 	height: 68px;
 	width: 68px;
@@ -310,10 +305,10 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #active label{ /*стиль отдельного переключателя*/
-	border-radius: 10px; /*скругление углов*/
 	display: inline-block; /*расположение в строку*/
-	width: 15px;
-	height: 15px;
+	width: 102px;
+	height: 6px;
+	opacity: 0.5;
 	background: #bbb;
 }
 
@@ -323,7 +318,8 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #active label:hover{ /*поведение чекбокса при наведении*/
-	background: #76c8ff;
+	background: white;
+	opacity: 0.2;
 	border-color: #777 !important; /*выполнение в любом случае*/
 }
 
@@ -331,8 +327,8 @@ label, a{ /*при наведении на стрелки или переклю�
 #switch1:checked ~ #active label:nth-child(1),
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3){
-	background: #18a3dd;
-	border-color: #18a3dd !important;
+	background: white;
+	border-color: white !important;
 }
 
 #slides .image{ /*анимация пролистывания изображений*/
@@ -347,7 +343,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	transition: opacity 0.2s ease-out;
 }
 
-/*SLIDER END*/
+/***********************  SLIDER ********************************/
 
 .lists {
 	display: flex;
@@ -390,12 +386,14 @@ label, a{ /*при наведении на стрелки или переклю�
 
 /*                Projects Done                */
 
-.projects-done {
+.projects-done section{
+	width: 1230px;
+	margin: 0 auto;
+	padding: 0;
 }
 .houses {
-	display: grid;
-	grid-template-columns: 50% 50%;
-  	grid-template-rows: 50% 50%;
+	display: flex;
+	justify-content: space-between;
 }
 .houses h3 {
 	text-transform: uppercase;
@@ -441,10 +439,12 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                Projects Done - END                */
 
 
+
 /*                Section Photos              */
 .photos {
 }
 /*                Section Photos - END              */
+
 
 /*                Section Comment              */
 .comment{
@@ -548,14 +548,76 @@ label, a{ /*при наведении на стрелки или переклю�
 	position: relative;
 	margin-left: 630px;
 	z-index: 999;
+	top: 25px;
+	color: #ffba00;
 }
 .contacts h2{
 	text-transform: uppercase;
 	color: #582c60;
-	margin-top: 25px;
+	padding-top: 45px;
+	margin-top: 0px;
+	margin-bottom: 66px;
+}
+.contacts p{
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.contacts a{
+	padding-bottom: 36px;
+	padding-top: 36px;
+	color: #ffba00;
+    text-decoration: none;
 }
 /*                Section Singup - END              */
 
+/*                Section Footer                    */
 
-.section8 {
+.footer {
+	height: 110px;
+	background-color: #582c60;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	margin-top: 130px;
 }
+footer {
+	display: flex;
+}
+.footer img{
+	margin-top: 24px; 
+}
+.footer p{	
+    letter-spacing: 0.1em;
+	font-size: 11px;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 145px;
+	color: #a291a5;
+}
+.btn-footer {
+    border: 1px solid #ffffff;
+    font-size: 9px;
+    text-decoration: none;
+	text-transform: uppercase;
+    padding: 11px 0px;
+    color: white;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    width: 175px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 220px;
+    margin-top: 39px;
+}
+.footer h4{
+	margin-left: 44px;
+	color: white;
+	letter-spacing: 0.1em;
+	margin-top: 46px;
+}
+.btn-footer:hover {
+	color: #ffba00;
+	border-radius: 3px;
+	border: 1px solid #ffba00;
+}
+/*                Section Footer - END              */
