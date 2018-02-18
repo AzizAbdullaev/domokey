@@ -441,12 +441,177 @@ label, a{ /*при наведении на стрелки или переклю�
 
 
 /*                Section Photos              */
+
 .photos {
 }
+.gallery {
+	margin-top: 90px;
+	display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 28px;
+}
+.gallery div:first-child {
+	grid-column: 1 / span 5;
+    grid-row: 1 /span 2;
+}
+#gallery_slider { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+}
+
+#gallery_slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#gallery_slides article{ /*все изображения справа друг от доруга*/
+	width: 12.5%;
+	float: left;
+}
+
+#gallery_slides .gallery_image{ /*устанавливает общий размер блока с изображениями*/
+	width: 800%;
+	line-height: 0;
+}
+
+#gallery_overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery_image article img{ /*размер изображений слайдера*/
+	width: 100%;
+	height: 345px;
+	object-fit: cover;
+}
+
+#gallery_desktop:checked ~ #gallery_slider{ /*размер всего слайдера*/
+	/* max-width: 988px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#photo1:checked ~ #gallery_controls label:nth-child(8), 
+#photo2:checked ~ #gallery_controls label:nth-child(1),
+#photo3:checked ~ #gallery_controls label:nth-child(2),
+#photo4:checked ~ #gallery_controls label:nth-child(3),
+#photo5:checked ~ #gallery_controls label:nth-child(4),
+#photo6:checked ~ #gallery_controls label:nth-child(5),
+#photo7:checked ~ #gallery_controls label:nth-child(6),
+#photo8:checked ~ #gallery_controls label:nth-child(7){
+	background: url('../img/gallery/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	/*margin: 0 0 0 -84px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#photo1:checked ~ #gallery_controls label:nth-child(2), 
+#photo2:checked ~ #gallery_controls label:nth-child(3),
+#photo3:checked ~ #gallery_controls label:nth-child(4),
+#photo4:checked ~ #gallery_controls label:nth-child(5),
+#photo5:checked ~ #gallery_controls label:nth-child(6),
+#photo6:checked ~ #gallery_controls label:nth-child(7),
+#photo7:checked ~ #gallery_controls label:nth-child(8),
+#photo8:checked ~ #gallery_controls label:nth-child(1){
+	background: url('../img/gallery/next.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	/*margin: 0 -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+.gallery_controls label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.gallery input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#photo1:checked ~ #gallery_slides .gallery_image{
+	margin-left: 0;
+}
+
+#photo2:checked ~ #gallery_slides .gallery_image{
+	margin-left: -100%;
+}
+
+#photo3:checked ~ #gallery_slides .gallery_image{
+	margin-left: -200%;
+}
+
+#photo4:checked ~ #gallery_slides .gallery_image{
+	margin-left: -300%;
+}
+
+#photo5:checked ~ #gallery_slides .gallery_image{
+	margin-left: -400%;
+}
+#photo6:checked ~ #gallery_slides .gallery_image{
+	margin-left: -500%;
+}
+#photo7:checked ~ #gallery_slides .gallery_image{
+	margin-left: -600%;
+}
+#photo8:checked ~ #gallery_slides .gallery_image{
+	margin-left: -700%;
+}
+
+#gallery_controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+.gallery_active label img{ /*стиль отдельного переключателя*/
+	display: inline-block; /*расположение в строку*/
+	width: 176px;
+	height: 158px;
+	object-fit: cover;
+}
+
+.gallery_active{ /*расположение блока с переключателями*/
+	/*margin: 23% 0 0;
+	text-align: center;*/
+}
+
+.gallery_active label:hover{ /*поведение чекбокса при наведении*/
+	background: white;
+	opacity: 0.2;
+}
+/*цвет активного лейбла при активации чекбокса*/
+#photo1:checked ~ .gallery_active label:nth-child(1),
+#photo2:checked ~ .gallery_active label:nth-child(2),
+#photo3:checked ~ .gallery_active label:nth-child(3),
+#photo4:checked ~ .gallery_active label:nth-child(4),
+#photo5:checked ~ .gallery_active label:nth-child(5),
+#photo6:checked ~ .gallery_active label:nth-child(6),
+#photo7:checked ~ .gallery_active label:nth-child(7),
+#photo8:checked ~ .gallery_active label:nth-child(8){
+	background: white;
+	opacity: 0.5;
+}
+
+#gallery_slides .gallery_image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#gallery_controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#gallery_controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+
 /*                Section Photos - END              */
 
 
-/*                Section Comment              */
+/*                Section Comment                   */
 .comment{
  	background-color: #f3f0f4;
 }
@@ -465,9 +630,9 @@ label, a{ /*при наведении на стрелки или переклю�
 	display: flex;
 	margin-top: 79px;
 }
-/*                Section Photos - END              */
+/*                Section Comment - END              */
 
-/*                Section Singup              */
+/*                Section Singup                     */
 .singup {
 	background-color: #582c60;
 	height: 139px;
