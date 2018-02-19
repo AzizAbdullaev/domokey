@@ -1,14 +1,22 @@
 @font-face {
-	font-family: "OpenSansExtraBold";
+	font-family: "OpenSans ExtraBold";
     src: url(../fonts/OpenSans-ExtraBold.ttf);
-
+}
+@font-face {
     font-family: "OpenSans";
     src: url(../fonts/OpenSans-Regular.ttf);
 }
-
+@font-face {
+    font-family: "OpenSans SemiBold";
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: "OpenSans Italic";
+    src: url(../fonts/OpenSans-Italic.ttf);
+}
 body {
 	margin: 0;
-	font-family: OpenSansExtraBold;
+	font-family: "OpenSans ExtraBold";
   }
 
 @media screen and (max-width: 900px) {
@@ -32,7 +40,6 @@ h1 {
 header p {
 	color: #ffba00;
 	font-size: 20px;
-	font-family: OpenSansExtraBold;
 	margin-top: 0px;
 	padding-bottom: 135px;
 }
@@ -67,7 +74,6 @@ header p {
 	margin: 0 auto;
 	display: flex;
 	text-transform: uppercase;
-	font-family: OpenSansExtraBold;
 	padding: 32px 0 0;
 }
 
@@ -168,11 +174,10 @@ section {
   margin-left: 0;
 }
 .tab-content {
-  background: #fff;
-  color: #000;
+  color: #676168;
+  font-family: OpenSans;
 }
 .tab-content p {
-  margin: 0 0 20px;
   line-height: 1.5;
 }
 .tab-content > div {
@@ -206,7 +211,8 @@ section {
   display: block;
 }
 .btn-tech{
-	border: 2px solid #ffba00;
+	margin-top: 103px;
+	border: 0px solid #ffba00;
     font-size: 15px;
     text-decoration: none;
     padding: 21px 0px;
@@ -250,7 +256,9 @@ section {
 
 article img{ 
 }
-
+.all{
+	margin-top: 55px;
+}
 
 /*настройка переключения и положения для левой стрелки*/
 /*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
@@ -347,6 +355,9 @@ label, a{ /*при наведении на стрелки или переклю�
 
 .lists {
 	display: flex;
+	font-family: OpenSans SemiBold;
+	color: #1f0f22;
+	margin-top: 58px;
 }
 
 /* end Section TECHNOLIGIES */
@@ -361,6 +372,10 @@ label, a{ /*при наведении на стрелки или переклю�
 .advantage h1 {
 	color: white;
 }
+.advantage p{
+	font-family: OpenSans;
+	color: white;
+}
 
 .items {
 	text-align: center;
@@ -371,7 +386,6 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 .items h1 {
 	font-size: 16px;
-	font-family: OpenSansExtraBold;
 	color: #ffba00;
 }
 .icons {
@@ -398,6 +412,7 @@ label, a{ /*при наведении на стрелки или переклю�
 .houses h3 {
 	text-transform: uppercase;
 	text-align: center;
+	font-family: OpenSans ExtraBold;
 }
 .kard {
 	width: 600px;
@@ -406,6 +421,7 @@ label, a{ /*при наведении на стрелки или переклю�
     box-shadow: 0 0 10px rgba(0,0,0,0.40);
     border-radius: 5px;
     margin-top: 95px; 
+    font-family: OpenSans;
 }
 .first-half {
 	margin: 22px 30px;
@@ -416,9 +432,11 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 .second-half a{
 	text-decoration: none;
+	color: #ffba00;
+	font-family: OpenSans Italic;
 }
 .btn-proj {
-	border: 2px solid #ffba00;
+	border: 0px solid #ffba00;
     font-size: 15px;
     text-decoration: none;
     padding: 21px 0px;
@@ -430,11 +448,9 @@ label, a{ /*при наведении на стрелки или переклю�
     background-color: #ffba00;
     text-align: center;
     text-transform: uppercase;
-    margin-left: 35px;
-    margin-top: 42px;
-}
-.floor {
-	padding-top: 15px;
+    margin-left: 40px;
+    margin-top: 6px;
+    font-family: OpenSans ExtraBold;
 }
 /*                Projects Done - END                */
 
@@ -584,7 +600,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	opacity: 0.2;
 }
 /*цвет активного лейбла при активации чекбокса*/
-#photo1:checked ~ .gallery_active label:nth-child(1),
+#photo1:checked * #mymy > .gallery_active label:nth-child(1),
 #photo2:checked ~ .gallery_active label:nth-child(2),
 #photo3:checked ~ .gallery_active label:nth-child(3),
 #photo4:checked ~ .gallery_active label:nth-child(4),
@@ -623,12 +639,22 @@ label, a{ /*при наведении на стрелки или переклю�
 	padding: 0px 30px 0px 30px;
 	margin: 0 15px;
 	margin-bottom: 45px;
-	text-align: center;
 	border-radius: 4px;
+}
+.comm-form h4{
+	text-align: center;
+	text-transform: uppercase;
+}
+.comm-form a{
+	text-decoration: none;
+	color: #ffba00;
 }
 .comments {
 	display: flex;
 	margin-top: 79px;
+}
+.comments p{
+	font-family: OpenSans Italic;
 }
 /*                Section Comment - END              */
 
@@ -680,6 +706,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	font-size: 10px;
 	text-align: center;
 	margin-top: 21px;
+	font-family: OpenSans;
 }
 .btn-enroll {
     font-size: 13px;
@@ -758,10 +785,12 @@ footer {
 	margin-top: 50px;
 	margin-left: 145px;
 	color: #a291a5;
+	font-family: OpenSans;
 }
 .btn-footer {
     border: 1px solid #ffffff;
     font-size: 9px;
+    font-family: OpenSans SemiBold;
     text-decoration: none;
 	text-transform: uppercase;
     padding: 11px 0px;
