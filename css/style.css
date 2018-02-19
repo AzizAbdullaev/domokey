@@ -15,6 +15,7 @@
     src: url(../fonts/OpenSans-Italic.ttf);
 }
 body {
+	background-color: #f3f0f4;
 	margin: 0;
 	font-family: "OpenSans ExtraBold";
   }
@@ -64,6 +65,7 @@ header p {
   padding-left: 33px;
   text-decoration: none;
   color: white;
+  letter-spacing: 0.1em;
 }
 
 .navLinks:hover {
@@ -84,12 +86,15 @@ section {
 }
 
 .main {
+	height: 700px;
 	position: relative;
 	font-size: 47px;
 	background-image: url(../img/house1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0 0 26px rgba(0,0,0,0.75);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  
 }
 
 .module-windows {
@@ -137,12 +142,15 @@ section {
 }
 
 .technologies {
+	-webkit-clip-path: polygon(50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+	clip-path: polygon(50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+  	height: 900px;
+  	background-color: white;
 }
 
 .underlining-h1 {
 	text-align: center;
     position: relative;
-	margin-top: 85px;
 	font-size: 36px;
 }
 
@@ -368,6 +376,9 @@ label, a{ /*при наведении на стрелки или переклю�
     background-size: cover;
     background-repeat: no-repeat;
     position: initial;
+    height: 725px;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  
 }
 .advantage h1 {
 	color: white;
@@ -399,7 +410,11 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                ADVANTAGE END                 */
 
 /*                Projects Done                */
-
+.projects-done {
+	background-color: #f3f0f4;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  
+}
 .projects-done section{
 	width: 1230px;
 	margin: 0 auto;
@@ -459,6 +474,8 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                Section Photos              */
 
 .photos {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  
 }
 .gallery {
 	margin-top: 90px;
@@ -669,7 +686,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	margin-bottom: 32px;
 }
 .register {
-	margin-top: 38px;
+	margin-top: 30px;
 	margin-left: 70px;
 	color: white;
     letter-spacing: 0.1em;
