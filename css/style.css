@@ -15,7 +15,6 @@
     src: url(../fonts/OpenSans-Italic.ttf);
 }
 body {
-	background-color: #f3f0f4;
 	margin: 0;
 	font-family: "OpenSans ExtraBold";
   }
@@ -133,7 +132,7 @@ section {
 	flex: 1 1 0;
 }
 
-/* start Section TECHNOLIGIES */
+/*                       Section TECHNOLIGIES                        */
 
 .sip {
 	display: grid;
@@ -142,10 +141,8 @@ section {
 }
 
 .technologies {
-	-webkit-clip-path: polygon(50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
-	clip-path: polygon(50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
-  	height: 900px;
-  	background-color: white;
+  	height: 1007px;
+  	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  
 }
 
 .underlining-h1 {
@@ -367,7 +364,9 @@ label, a{ /*при наведении на стрелки или переклю�
 	color: #1f0f22;
 	margin-top: 58px;
 }
-
+.lists li{
+	list-style-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDQ0IDQ0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0NCA0NCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CiAgPHBhdGggZD0ibTIyLDBjLTEyLjIsMC0yMiw5LjgtMjIsMjJzOS44LDIyIDIyLDIyIDIyLTkuOCAyMi0yMi05LjgtMjItMjItMjJ6bTEyLjcsMTUuMWwwLDAtMTYsMTYuNmMtMC4yLDAuMi0wLjQsMC4zLTAuNywwLjMtMC4zLDAtMC42LTAuMS0wLjctMC4zbC03LjgtOC40LS4yLS4yYy0wLjItMC4yLTAuMy0wLjUtMC4zLTAuN3MwLjEtMC41IDAuMy0wLjdsMS40LTEuNGMwLjQtMC40IDEtMC40IDEuNCwwbC4xLC4xIDUuNSw1LjljMC4yLDAuMiAwLjUsMC4yIDAuNywwbDEzLjQtMTMuOWgwLjFjMC40LTAuNCAxLTAuNCAxLjQsMGwxLjQsMS40YzAuNCwwLjMgMC40LDAuOSAwLDEuM3oiIGZpbGw9IiM1ODJjNjAiLz4KPC9zdmc+Cg==);
+}
 /* end Section TECHNOLIGIES */
 
 /*////////////////// ADVANTAGE */
@@ -377,8 +376,18 @@ label, a{ /*при наведении на стрелки или переклю�
     background-repeat: no-repeat;
     position: initial;
     height: 725px;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
-  	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  
+}
+#masked{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-mask: url(../img/mask.png);
+	-webkit-mask-size: cover;
+	-webkit-mask-position: center;
+	-webkit-mask-repeat: no-repeat;	
+
 }
 .advantage h1 {
 	color: white;
@@ -414,6 +423,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	background-color: #f3f0f4;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  
+  	height: 655px;
 }
 .projects-done section{
 	width: 1230px;
@@ -476,6 +486,7 @@ label, a{ /*при наведении на стрелки или переклю�
 .photos {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   	clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);  
+  	height: 855px;
 }
 .gallery {
 	margin-top: 90px;
@@ -618,7 +629,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 /*цвет активного лейбла при активации чекбокса*/
 #photo1:checked * #mymy > .gallery_active label:nth-child(1),
-#photo2:checked ~ .gallery_active label:nth-child(2),
+#photo2:checked ~ div.gallery_active label:nth-child(2),
 #photo3:checked ~ .gallery_active label:nth-child(3),
 #photo4:checked ~ .gallery_active label:nth-child(4),
 #photo5:checked ~ .gallery_active label:nth-child(5),
@@ -686,7 +697,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	margin-bottom: 32px;
 }
 .register {
-	margin-top: 30px;
+	margin-top: 28px;
 	margin-left: 70px;
 	color: white;
     letter-spacing: 0.1em;
@@ -724,6 +735,9 @@ label, a{ /*при наведении на стрелки или переклю�
 	text-align: center;
 	margin-top: 21px;
 	font-family: OpenSans;
+}
+.enroll img{
+	width: 10px;
 }
 .btn-enroll {
     font-size: 13px;
@@ -765,7 +779,7 @@ label, a{ /*при наведении на стрелки или переклю�
 	color: #582c60;
 	padding-top: 45px;
 	margin-top: 0px;
-	margin-bottom: 66px;
+	margin-bottom: 64px;
 }
 .contacts p{
 	padding-top: 16px;
