@@ -1,8 +1,12 @@
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>DOMOKEY</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
   <div class="main">
@@ -10,28 +14,26 @@
       <header>
         <div class="nav-container">
           <div class="header-logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <p>+0 (44) 567-89-12</p>
           </div>
           <nav class="header-nav">
-            <div class="">
-              <a href="#technologies" class="navlinks">технология</a>
-            </div>
-            <div class="adv">
-              <a href="#advantage" class="navlinks">преимущества</a>
-            </div>
-            <div class="done">
-              <a href="#projects-done" class="navlinks">готовые проэкты</a>
-            </div>
-            <div class="comm">
-              <a href="#comment" class="navlinks">отзывы</a>
-            </div>  
-            <div class="where">
-            <a href="#map" class="navlinks">где посмотреть</a>
-            </div>
+            <a href="#" class="menu-icon" id="menu" onclick="navigation.style.top='150px'">&#9776;</a>
+            <a href="#technologies">технология</a>
+            <a href="#advantage">преимущества</a>
+            <a href="#projects-done">готовые проэкты</a>
+            <a href="#comment">отзывы</a>  
+            <a href="#map">где посмотреть</a>
           </nav>
         </div>
-        <p>+7 (925) 742-4-16</p>
       </header>
+      <div class="nav-menu" id="navigation">
+        <a href="#technologies">технология</a>
+        <a href="#advantage">преимущества</a>
+        <a href="#projects-done">готовые проэкты</a>
+        <a href="#comment">отзывы</a>  
+        <a href="#map">где посмотреть</a>
+      </div>
       <div class="module-windows">
         <h1>модульные дома <br> в киеве</h1>
         <div class="buttons">
@@ -65,6 +67,46 @@
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
             </div>
           </div>
+          <div class="lists">
+            <div class="first-list">
+              <ul>
+                  <li>Преимущество технологии 1</li>
+                  <li>Второе преимущество</li>
+                  <li>Еще здесь одно преимущество тут</li>
+                  <li>Вообще здесь тоже есть</li>
+                  <li>И даже тут вроде</li>
+              </ul>
+            </div> 
+            <div class="second-list">
+                <ul>
+                  <li>Преимущество технологии 1</li>
+                  <li>Второе преимущество</li>
+                  <li>Еще здесь одно преимущество тут</li>
+                  <li>Вообще здесь тоже есть</li>
+                  <li>И даже тут вроде</li>
+                </ul>
+            </div>   
+          </div>
+        </div>
+        <div class="lists-responsive">
+            <div>
+              <ul>
+                  <li>Преимущество технологии 1</li>
+                  <li>Второе преимущество</li>
+                  <li>Еще здесь одно преимущество тут</li>
+                  <li>Вообще здесь тоже есть</li>
+                  <li>И даже тут вроде</li>
+              </ul>
+            </div> 
+            <div>
+                <ul>
+                  <li>Преимущество технологии 1</li>
+                  <li>Второе преимущество</li>
+                  <li>Еще здесь одно преимущество тут</li>
+                  <li>Вообще здесь тоже есть</li>
+                  <li>И даже тут вроде</li>
+                </ul>
+            </div>   
         </div>
         <div class="all">
           <input checked type="radio" name="respond" id="desktop">
@@ -76,8 +118,8 @@
                 <div id="overflow">
                   <div class="image">
                     <article><img src="./img/slide.png"></article>
-                    <article><img src="./img/slide.png"></article>
-                    <article><img src="./img/slide.png"></article>
+                    <article><img src="./img/slide1.png"></article>
+                    <article><img src="./img/slide2.png"></article>
                   </div>
                 </div>
               </div>
@@ -93,29 +135,8 @@
               </div>
             </article>
         </div>
-        <div class="lists">
-          <div class="first-list">
-            <ul>
-                <li>Преимущество технологии 1</li>
-                <li>Второе преимущество</li>
-                <li>Еще здесь одно преимущество тут</li>
-                <li>Вообще здесь тоже есть</li>
-                <li>И даже тут вроде</li>
-            </ul>
-          </div> 
-          <div class="second-list">
-              <ul>
-                <li>Преимущество технологии 1</li>
-                <li>Второе преимущество</li>
-                <li>Еще здесь одно преимущество тут</li>
-                <li>Вообще здесь тоже есть</li>
-                <li>И даже тут вроде</li>
-              </ul>
-          </div>   
-        </div>
-        <p></p>
-        <a href="#"><div class="btn-tech">посмотриеть вживую</div></a>
-        </div>
+      </div>
+      <a href="#"><div class="btn-tech">посмотриеть вживую</div></a>
     </section>
   </div>
 
@@ -143,7 +164,9 @@
           <h1>гибкость</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo</p>
         </div>
-        <div class="wrapp-items"></div>
+        <div class="wrapp-items hide"></div>
+        <div class="wrapp-items hide"></div>
+        <div class="wrapp-items hide"></div>
         <div class="wrapp-items">
           <div class="icons"><img src="./img/Change.png"></div>
           <h1>изменяемость</h1>
@@ -154,7 +177,9 @@
           <h1>дизайн</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo</p>
         </div>
-        <div class="wrapp-items"></div>
+        <div class="wrapp-items hide"></div>
+        <div class="wrapp-items hide"></div>
+        <div class="wrapp-items hide"></div>
       </div>
     </section>
   </div>
@@ -191,6 +216,28 @@
               <a href="#"><div class="btn-proj">получить проект</div></a>
             </div>
           </div>
+          <div class="kard-mobile">
+            <div class="first-half">
+              <h3>мечта олигарха</h3>
+              <img src="./img/house.png">
+              <p>Этажей: 3 <br>
+              Площадь: 1589,98 м<sup>2</sup></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo</p>
+              <p><a href="#">подробнее</a></p>
+              <a href="#"><div class="btn-proj">получить проект</div></a>
+            </div>
+          </div>
+           <div class="kard-mobile">
+            <div class="first-half">
+              <h3>мечта олигарха</h3>
+              <img src="./img/house.png">
+              <p>Этажей: 3 <br>
+              Площадь: 1589,98 м<sup>2</sup></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo</p>
+              <p><a href="#">подробнее</a></p>
+              <a href="#"><div class="btn-proj">получить проект</div></a>
+            </div>
+          </div>
       </div>
     </section>
   </div>
@@ -201,7 +248,7 @@
         <h1 class="underlining-h1">реализованные проекты</h1>
       </div>
       <div class="gallery">
-        <div>
+        <div class="main-slide">
             <input checked type="radio" name="gallery_respond" id="gallery_desktop">
             <article id="gallery_slider">
               <input checked type="radio" name="gallery_slider" id="photo1">
@@ -238,28 +285,14 @@
               </div>
             </article>
         </div>
-        <div id="mymy" class="gallery_active">
+        <div class="gallery_active">
           <label for="photo1"><img src="./img/gallery/1.jpg"></label>
-        </div>
-        <div class="gallery_active">
           <label for="photo2"><img src="./img/gallery/2.jpg"></label>
-        </div>
-        <div class="gallery_active">
           <label for="photo3"><img src="./img/gallery/3.jpg"></label>
-        </div>
-        <div class="gallery_active">
           <label for="photo4"><img src="./img/gallery/4.jpg"></label>
-        </div>
-        <div class="gallery_active">
           <label for="photo5"><img src="./img/gallery/5.jpg"></label>
-        </div>
-        <div class="gallery_active">
           <label for="photo6"><img src="./img/gallery/6.jpg"></label>
-        </div>
-        <div class="gallery_active">
           <label for="photo7"><img src="./img/gallery/7.jpg"></label>
-        </div>
-        <div class="gallery_active">
           <label for="photo8"><img src="./img/gallery/8.jpg"></label>
         </div>
       </div>
@@ -347,4 +380,6 @@
       </footer>
     </section>
   </div>
+  <script src="js/main.js"></script>
 </body>
+</html>
