@@ -63,7 +63,8 @@ section {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	text-transform: uppercase;
 	padding: 32px 0 0;
 }
@@ -115,6 +116,8 @@ section {
 }
 .buttons {
 	padding-bottom: 83px;
+	margin-top: 20px;
+	margin-bottom: 70px;
 	/*width: 830px;*/
 	display: inline-block;
 	-webkit-box-pack: justify;
@@ -142,8 +145,11 @@ section {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .underlining-h1 {
 	text-align: center;
@@ -319,6 +325,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 #slides .image{ /*анимация пролистывания изображений*/
 	-webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 #controls label:hover{ /*прозрачность стрелок при наведении*/
@@ -326,13 +333,16 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 #controls label{ /*прозрачность стрелок при отводе курсора*/
 	-webkit-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
 	transition: opacity 0.2s ease-out;
 }
 .lists {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	font-family: OpenSans SemiBold;
 	color: #1f0f22;
 }
@@ -343,8 +353,13 @@ label, a{ /*при наведении на стрелки или переклю�
 	margin-bottom: 18px;
 }
 .lists-responsive{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	font-family: OpenSans SemiBold;
 	color: #1f0f22;
 }
@@ -359,7 +374,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 /*                          Section ADVANTAGE                           */
 .advantage {
-	background-image: url(../img/adv.jpg);
+	background-image: url(../img/advantage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -390,11 +405,20 @@ label, a{ /*при наведении на стрелки или переклю�
 	    grid-template-columns: 1fr 1fr 1fr 1fr;
   	-ms-grid-rows: 1fr 1fr;
   	    grid-template-rows: 1fr 1fr;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-start;
-	flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
   	margin-top: 60px;
 }
 .items h1 {
@@ -437,7 +461,8 @@ label, a{ /*при наведении на стрелки или переклю�
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .houses h3 {
 	text-transform: uppercase;
@@ -492,7 +517,8 @@ label, a{ /*при наведении на стрелки или переклю�
 	border-radius: 5px;
 	font-family: OpenSans;
     background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.40);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.40);
+            box-shadow: 0 0 10px rgba(0,0,0,0.40);
 	margin-top: 60px;
 }
 .kard-mobile a{
@@ -644,10 +670,18 @@ label, a{ /*при наведении на стрелки или переклю�
 .gallery_active{ /*расположение блока с переключателями*/
 	/*margin: 23% 0 0;
 	text-align: center;*/
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .gallery_active label:hover{ /*поведение чекбокса при наведении*/
 	background: white;
@@ -667,6 +701,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 #gallery_slides .gallery_image{ /*анимация пролистывания изображений*/
 	-webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 #gallery_controls label:hover{ /*прозрачность стрелок при наведении*/
@@ -674,6 +709,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 #gallery_controls label{ /*прозрачность стрелок при отводе курсора*/
 	-webkit-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
 	transition: opacity 0.2s ease-out;
 }
 /*                Section Photos - END              */
@@ -710,10 +746,16 @@ label, a{ /*при наведении на стрелки или переклю�
 	margin-bottom: 20px;
 }
 .comments {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 	margin-top: 79px;
 }
 .comments p{
@@ -727,10 +769,15 @@ label, a{ /*при наведении на стрелки или переклю�
 	/*height: 139px;*/
 }
 .wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 	/*margin-bottom: 32px;*/
 }
 .register {
@@ -841,9 +888,15 @@ label, a{ /*при наведении на стрелки или переклю�
 	margin-top: 130px;
 }
 footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap
 }
 .footer img{
 	margin: 24px 0; 
@@ -897,7 +950,8 @@ footer {
 		margin: -75% 0 0 0;
 	}
 	.comments{
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 	.register{
 		margin-left: 0;
@@ -936,10 +990,19 @@ footer {
 			display: block;
 		}
 		.nav-menu {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-end;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			-webkit-box-pack: start;
+			    -ms-flex-pack: start;
+			        justify-content: flex-start;
+			-webkit-box-align: end;
+			    -ms-flex-align: end;
+			        align-items: flex-end;
 			text-align: -webkit-right;
 		}
 		.nav-menu a{
@@ -956,6 +1019,8 @@ footer {
 			text-align: left;
 		}
 		.nav-menu.responsive{
+			-webkit-transition: font-size 3s, color 2s;
+			-o-transition: font-size 3s, color 2s;
 			transition: font-size 3s, color 2s;
 		}
 		.module-windows h1{
@@ -978,7 +1043,8 @@ footer {
 		display: none;
   	}
   	.houses {
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 	.kard{
 		display: none;
@@ -1012,7 +1078,9 @@ footer {
 		margin-top: 0;
 	}
 	footer{
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 	.btn-footer{
 		margin-left: 0;
@@ -1041,10 +1109,19 @@ footer {
 		display: block;
 	}
 	.nav-menu {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-end;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
 		text-align: -webkit-right;
 	}
 	.nav-menu a{
@@ -1061,10 +1138,14 @@ footer {
 		text-align: left;
 	}
 	.nav-menu.responsive{
+		-webkit-transition: font-size 3s, color 2s;
+		-o-transition: font-size 3s, color 2s;
 		transition: font-size 3s, color 2s;
 	}
 	.sip{
-		justify-content: start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: start;
 	}
 	.lists{
 		display: none;
@@ -1076,7 +1157,8 @@ footer {
 		display: none;
   	}
   	.houses {
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 	.kard-mobile{
 	  	display: none;
@@ -1088,7 +1170,8 @@ footer {
 		margin: -36% 0 0 0;
 	}
 	.comments{
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 	.contacts{
 		margin-left: 0;
@@ -1121,10 +1204,19 @@ footer {
 		display: block;
 	}
 	.nav-menu {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-end;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
 		text-align: -webkit-right;
 	}
 	.nav-menu a{
@@ -1141,10 +1233,14 @@ footer {
 		text-align: left;
 	}
 	.nav-menu.responsive{
+		-webkit-transition: font-size 3s, color 2s;
+		-o-transition: font-size 3s, color 2s;
 		transition: font-size 3s, color 2s;
 	}
 	.sip{
-		justify-content: space-evenly;
+		-webkit-box-pack: space-evenly;
+		    -ms-flex-pack: space-evenly;
+		        justify-content: space-evenly;
 	}
 	.lists{
 		display: none;
@@ -1156,7 +1252,8 @@ footer {
   		display: none;
   	}
 	.houses {
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 	}
 	.kard-mobile{
 	  	display: none;
