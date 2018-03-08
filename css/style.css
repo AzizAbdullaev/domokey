@@ -27,6 +27,11 @@ h1 {
 header p {
 	color: #ffba00;
 	font-size: 20px;
+<<<<<<< HEAD
+=======
+	margin-top: 0px;
+	padding-bottom: 135px;
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
 	margin-top: 14px;
 }
 
@@ -82,10 +87,16 @@ section {
 	background-image: url(../img/house1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+<<<<<<< HEAD
 	-webkit-box-shadow: 0 0 26px rgba(0,0,0,0.75);
 	        box-shadow: 0 0 26px rgba(0,0,0,0.75);
   	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
   	        clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
+=======
+	box-shadow: 0 0 26px rgba(0,0,0,0.75);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+  	clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
 }
 .module-windows {
 	color: white;
@@ -130,6 +141,7 @@ section {
 /*                       Section TECHNOLIGIES                        */
 
 .technologies {
+<<<<<<< HEAD
   	/*height: 1005px;*/
   	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
   	        clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
@@ -137,6 +149,14 @@ section {
   	position: relative;
   	z-index: 900;
   	padding-top: 5%;
+=======
+  	height: 1005px;
+  	clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
+  	background: white;
+  	position: relative;
+  	z-index: 900;
+  	padding-top: 76px;
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
 }
 .technologies ul{
 	padding-left: 25px;
@@ -162,7 +182,11 @@ section {
 	position: absolute;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     top: 90%;
+=======
+    top: 37px;
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
     margin: 30px auto;
     width: 160px;
     height: 5px;
@@ -378,6 +402,7 @@ label, a{ /*при наведении на стрелки или переклю�
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+<<<<<<< HEAD
     /*height: 725px;*/
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
             clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
@@ -385,6 +410,13 @@ label, a{ /*при наведении на стрелки или переклю�
     z-index: 800; 
     padding-top: 170px;
     padding-bottom: 110px;
+=======
+    height: 725px;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+    margin-top: -100px;
+    z-index: 800; 
+    padding-top: 170px;
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
 }
 .advantage h1 {
 	color: white;
@@ -440,6 +472,7 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                Projects Done                */
 .projects-done {
 	background-color: #f3f0f4;
+<<<<<<< HEAD
   	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
   	        clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
   	/*height: 645px;*/
@@ -447,6 +480,14 @@ label, a{ /*при наведении на стрелки или переклю�
     z-index: 700; 
     padding-top: 190px;
     padding-bottom: 195px;
+=======
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+  	clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
+  	height: 645px;
+  	margin-top: -100px;
+    z-index: 700; 
+    padding-top: 158px;
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
     position: relative;
 }
 .projects-done section{
@@ -533,9 +574,15 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                Section Photos              */
 
 .photos {
+<<<<<<< HEAD
   	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
   	        clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
   	/*height: 860px;*/
+=======
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);
+  	clip-path: polygon(0 0, 100% 0, 100% 91%, 50% 100%, 0 91%);  
+  	height: 860px;
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
   	background: white;
   	margin-top: -100px;
     z-index: 600; 
@@ -718,16 +765,26 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                Section Comment                   */
 .comment{
  	background-color: #f3f0f4;
+<<<<<<< HEAD
  	/*height: 630px;*/
+=======
+ 	height: 630px;
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
  	margin-top: -100px;
     z-index: 500; 
     padding-top: 166px;
 }
 .comm-form {
 	background-color: white;
+<<<<<<< HEAD
 	width: 205px;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.40);	
 	        box-shadow: 0 0 10px rgba(0,0,0,0.40);
+=======
+	width: 270px;
+	height: 420px;	
+	box-shadow: 0 0 10px rgba(0,0,0,0.40);
+>>>>>>> b47b37033033ddb0eeee3ca7e1f259b9866b62f4
 	padding: 0px 30px 0px 30px;
 	border-radius: 4px;
 	margin-bottom: 30px;
