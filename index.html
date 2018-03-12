@@ -17,8 +17,8 @@
             <a href="index.html"><img src="img/logo.png" alt=""></a>
             <p>+0 (44) 567-89-12</p>
           </div>
-          <nav class="header-nav">
-            <a href="#" class="menu-icon" id="menu" onclick="navigation.style.top='150px'">&#9776;</a>
+          <nav class="header-nav" id="navigation">
+            <a href="#" class="menu-icon" id="menu">&#9776;</a>
             <a href="#technologies">технология</a>
             <a href="#advantage">преимущества</a>
             <a href="#projects-done">готовые проэкты</a>
@@ -27,7 +27,7 @@
           </nav>
         </div>
       </header>
-      <div class="nav-menu" id="navigation">
+      <div class="mobile-menu" id="nav-mobile">
         <a href="#technologies">технология</a>
         <a href="#advantage">преимущества</a>
         <a href="#projects-done">готовые проэкты</a>
@@ -140,6 +140,8 @@
     </section>
   </div>
 
+  <button class="btn-top" title="Вверх"></button>
+
   <div class="advantage" id="advantage">
     <section>
         <h1 class="underlining-h1">переимущества модульной технологии</h1>
@@ -249,19 +251,19 @@
       </div>
       <div class="gallery">
         <div class="main-slide">
-            <input checked type="radio" name="gallery_respond" id="gallery_desktop">
-            <article id="gallery_slider">
-              <input checked type="radio" name="gallery_slider" id="photo1">
-              <input type="radio" name="gallery_slider" id="photo2">
-              <input type="radio" name="gallery_slider" id="photo3">
-              <input type="radio" name="gallery_slider" id="photo4">
-              <input type="radio" name="gallery_slider" id="photo5">
-              <input type="radio" name="gallery_slider" id="photo6">
-              <input type="radio" name="gallery_slider" id="photo7">
-              <input type="radio" name="gallery_slider" id="photo8">
-              <div id="gallery_slides">
-                <div id="gallery_overflow">
-                  <div class="gallery_image">
+            <input checked type="radio" name="gallery-respond" id="gallery-desktop">
+            <article id="gallery-slider">
+              <input checked type="radio" name="gallery-slider" id="photo1">
+              <input type="radio" name="gallery-slider" id="photo2">
+              <input type="radio" name="gallery-slider" id="photo3">
+              <input type="radio" name="gallery-slider" id="photo4">
+              <input type="radio" name="gallery-slider" id="photo5">
+              <input type="radio" name="gallery-slider" id="photo6">
+              <input type="radio" name="gallery-slider" id="photo7">
+              <input type="radio" name="gallery-slider" id="photo8">
+              <div id="gallery-slides">
+                <div id="gallery-overflow">
+                  <div class="gallery-image">
                     <article><img src="./img/gallery/1.jpg"></article>
                     <article><img src="./img/gallery/2.jpg"></article>
                     <article><img src="./img/gallery/3.jpg"></article>
@@ -273,7 +275,7 @@
                   </div>
                 </div>
               </div>
-              <div id="gallery_controls">
+              <div id="gallery-controls">
                 <label for="photo1"></label>
                 <label for="photo2"></label>
                 <label for="photo3"></label>
@@ -283,17 +285,17 @@
                 <label for="photo7"></label>
                 <label for="photo8"></label>
               </div>
+              <div class="gallery-active">
+                <label for="photo1"><img src="./img/gallery/1.jpg"></label>
+                <label for="photo2"><img src="./img/gallery/2.jpg"></label>
+                <label for="photo3"><img src="./img/gallery/3.jpg"></label>
+                <label for="photo4"><img src="./img/gallery/4.jpg"></label>
+                <label for="photo5"><img src="./img/gallery/5.jpg"></label>
+                <label for="photo6"><img src="./img/gallery/6.jpg"></label>
+                <label for="photo7"><img src="./img/gallery/7.jpg"></label>
+                <label for="photo8"><img src="./img/gallery/8.jpg"></label>
+              </div>
             </article>
-        </div>
-        <div class="gallery_active">
-          <label for="photo1"><img src="./img/gallery/1.jpg"></label>
-          <label for="photo2"><img src="./img/gallery/2.jpg"></label>
-          <label for="photo3"><img src="./img/gallery/3.jpg"></label>
-          <label for="photo4"><img src="./img/gallery/4.jpg"></label>
-          <label for="photo5"><img src="./img/gallery/5.jpg"></label>
-          <label for="photo6"><img src="./img/gallery/6.jpg"></label>
-          <label for="photo7"><img src="./img/gallery/7.jpg"></label>
-          <label for="photo8"><img src="./img/gallery/8.jpg"></label>
         </div>
       </div>
     </section>
@@ -380,6 +382,7 @@
       </footer>
     </section>
   </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
