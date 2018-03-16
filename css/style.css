@@ -76,6 +76,7 @@ section {
 	font-size: 47px;
 	background-image: url(../img/house1.jpg);
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 	-webkit-box-shadow: 0 0 26px rgba(0,0,0,0.75);
 	        box-shadow: 0 0 26px rgba(0,0,0,0.75);
@@ -370,6 +371,7 @@ label, a{ /*при наведении на стрелки или переклю�
 /*                          Section ADVANTAGE                           */
 .advantage {
 	background-image: url(../img/advantage.jpg);
+	background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
